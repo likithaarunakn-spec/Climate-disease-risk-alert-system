@@ -5,9 +5,9 @@ from datetime import datetime, timedelta
 from tensorflow.keras.models import load_model
 from meteostat import Point, Daily
 #configurations
-OPENWEATHER_API_KEY = "bcc5d0430de78d1ba8821f46013bd3ce"
-TELEGRAM_BOT_TOKEN = "8472105812:AAHWr0ufjsBBAfbI3OZQ27Z091B97I7nh5o"
-TELEGRAM_CHAT_ID = "5771905032"
+OPENWEATHER_API_KEY = "OPEN_WEATHER_API_KEY"
+TELEGRAM_BOT_TOKEN = "TELEGRAM_BOT_TOKEN"
+TELEGRAM_CHAT_ID = "TELEGRAM_CHAT_ID"
 # Fixed values
 DEFAULT_AQI = 100
 DEFAULT_POPULATION_DENSITY = 400
@@ -123,5 +123,6 @@ alert_message = f"""
 """
 send_telegram_alert(alert_message)
 print("Combined disease alert sent to Telegram")
+
 
 
